@@ -1,10 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// import "@openzeppelin/contracts/access/Ownable.sol";
+import "./Unlinked.sol";
 
 contract Contract {
     constructor() {}
 
-    function func(address imp) public {}
+    function func(uint256 a) public returns (uint256) {
+        return unlinked(a);
+    }
 }
